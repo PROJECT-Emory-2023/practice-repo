@@ -18,7 +18,7 @@ public class twoSum {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        int[] array = new int[2];
+        int[] array = null;
         for (int i = 0; i < nums.length; i++){
             for (int j = i+1; i< nums.length; j++){
                 if (nums[i] + nums[j] == target){
