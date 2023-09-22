@@ -16,14 +16,14 @@ public class twoSum {
         int[] result3 = twoSum(arr3, 6);
         System.out.println("Result 3: " + result3[0] + ", " + result3[1]);
     }
-
-    public static int[] twoSum(int[] nums, int target) {
-        HashMap<int, int> map = new HashMap<int, int>();
-        int answer[] = {-1, -1};
+    
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int answer[] = new int[2];
         for (int i=0; i<nums.length; i++) {
-            if (map.get(target - nums[i])) {
+            if (map.containsKey(target - nums[i])) {
                 //then two sums have been located
-                answer[0] = map.get(target);
+                answer[0] = map.get(target - nums[i]);
                 answer[1] = i;
                 break;
             }
