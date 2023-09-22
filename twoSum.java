@@ -18,9 +18,18 @@ public class twoSum {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        //code here
-
-        return 0;
+        HashMap<int, int> map = new HashMap<int, int>();
+        int answer[] = {-1, -1};
+        for (int i=0; i<nums.length; i++) {
+            if (map.get(target - nums[i])) {
+                //then two sums have been located
+                answer[0] = map.get(target);
+                answer[1] = i;
+                break;
+            }
+            map.put(nums[i], i);
+        }
+        return answer;
     }
     
     // hello
