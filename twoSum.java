@@ -18,7 +18,7 @@ public class twoSum {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        //code here
+        testing
 
         return 0;
     }
