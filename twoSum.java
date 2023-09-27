@@ -17,10 +17,11 @@ public class twoSum {
         System.out.println("Result 3: " + result3[0] + ", " + result3[1]);
     }
 
-    public static int[] twoSum(int[] nums, int target) {
+    public static void twoSum(int[] nums, int target) {
         //code here
+        System.out.println("hi");
 
-        return 0;
+    
     }
     
     // hello
